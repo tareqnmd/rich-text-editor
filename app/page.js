@@ -1,10 +1,10 @@
-import { Editor } from './QuillEditor';
+import { QuillEditor } from '@/components/react-quill/QuillEditor';
 
 const page = () => {
 	return (
 		<>
-			hello
-			<Editor />
+			<h3>Editors</h3>
+			<QuillEditor />
 		</>
 	);
 };
