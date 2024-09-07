@@ -1,7 +1,29 @@
 'use client';
 import { useMemo, useRef } from 'react';
+import { Quill } from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import ReactQuillEditor from './ReactQuill';
+
+const fontSizeArr = [
+	'8px',
+	'9px',
+	'10px',
+	'12px',
+	'14px',
+	'16px',
+	'20px',
+	'24px',
+	'32px',
+	'42px',
+	'54px',
+	'68px',
+	'84px',
+	'98px',
+];
+
+var Size = Quill.import('attributors/style/size');
+Size.whitelist = fontSizeArr;
+Quill.register(Size, true);
 
 export const QuillEditor = ({ value, onValueChange }) => {
 	const quillRef = useRef(null);
@@ -11,7 +33,12 @@ export const QuillEditor = ({ value, onValueChange }) => {
 			toolbar: {
 				container: [
 					[{ header: [] }],
-					[{ font: [] }, { color: [] }, { background: [] }],
+					[
+						{ font: [] },
+						{ color: [] },
+						{ background: [] },
+						{ size: fontSizeArr },
+					],
 					['bold', 'italic', 'underline', 'strike'],
 					['blockquote', 'code-block'],
 					[{ script: 'sub' }, { script: 'super' }],

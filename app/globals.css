@@ -7,3 +7,16 @@
 	right: 10px;
 	position: relative;
 }
+
+.ql-snow {
+	.ql-picker {
+		&.ql-size {
+			.ql-picker-label,
+			.ql-picker-item {
+				&::before {
+					content: attr(data-value) !important;
+				}
+			}
+		}
+	}
+}
