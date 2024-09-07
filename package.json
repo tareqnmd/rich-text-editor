@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@lexical/react": "^0.17.1",
+    "lexical": "^0.17.1",
     "next": "14.2.8",
     "quill": "^2.0.2",
     "react": "^18",

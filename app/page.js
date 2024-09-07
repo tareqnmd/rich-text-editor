@@ -1,3 +1,4 @@
+import LexicalEditor from '@/components/lexical/LexicalEditor';
 import { QuillEditor } from '@/components/react-quill/QuillEditor';
 
 const page = () => {
@@ -5,6 +6,7 @@ const page = () => {
 		<>
 			<h3>Editors</h3>
 			<QuillEditor />
+			<LexicalEditor />
 		</>
 	);
 };
