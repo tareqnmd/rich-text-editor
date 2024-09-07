@@ -2,6 +2,7 @@
 import { useMemo, useRef } from 'react';
 import { Quill } from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
+import './react-quill.css';
 import ReactQuillEditor from './ReactQuill';
 
 const fontSizeArr = [

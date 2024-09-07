@@ -1,22 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.ql-imageLink:after {
-	content: url('https://img.icons8.com/?size=20&id=3jBFM0hcaAKH&format=png');
-	right: 10px;
-	position: relative;
-}
-
-.ql-snow {
-	.ql-picker {
-		&.ql-size {
-			.ql-picker-label,
-			.ql-picker-item {
-				&::before {
-					content: attr(data-value) !important;
-				}
-			}
-		}
-	}
-}
